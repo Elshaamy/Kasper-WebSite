@@ -2,6 +2,9 @@
 :root {
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --font-color: #777;
 }
 
 /* End Variables */
@@ -60,7 +63,7 @@ ul {
 /* End Global Rules */
 /* Start Components */
 .main-heading {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   text-align: center;
 }
 
@@ -102,7 +105,7 @@ ul {
   max-width: 100%;
   line-height: 2;
   margin: 0 auto 80px;
-  color: #777;
+  color: var(--font-color);
 }
 
 /* End Components */
@@ -315,8 +318,8 @@ header nav .form i {
 /* End landing */
 /* Start Service */
 .services {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
 }
 
 @media (min-width: 768px) {
@@ -355,15 +358,15 @@ header nav .form i {
 }
 
 .services .srv-box p {
-  color: #777;
+  color: var(--font-color);
   line-height: 2;
 }
 
 /* End Service */
 /*Start Design*/
 .design {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
   height: 600px;
   background-image: url(../Images/design-features.jpg);
   background-size: cover;
@@ -433,6 +436,10 @@ header nav .form i {
 
 /*End Design*/
 /* Start Portflio */
+.portfolio{
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
 .portfolio .container .shuffle {
   display: flex;
   justify-content: center;
@@ -568,6 +575,8 @@ header nav .form i {
 .about {
   overflow: hidden;
   text-align: center;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
 }
 
 .about img {
@@ -591,8 +600,8 @@ header nav .form i {
   background-size: cover;
   position: relative;
   color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
   text-align: center;
 }
 
@@ -660,8 +669,8 @@ header nav .form i {
 /* End Stats */
 /* Start Skills */
 .our-skills {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
 }
 
 .our-skills .container {
@@ -685,7 +694,7 @@ header nav .form i {
 }
 
 .our-skills .container>div>p {
-  color: #777;
+  color: var(--font-color);
   line-height: 2;
   text-align: center;
   margin-bottom: 60px;
@@ -720,7 +729,7 @@ header nav .form i {
 }
 
 .our-skills .container .content p {
-  color: #777;
+  color: var(--font-color);
   text-align: end;
   margin-bottom: 20px;
   font-size: 14px;
@@ -793,8 +802,8 @@ header nav .form i {
 /* End Skills */
 /* Start Quote */
 .quote {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
   background-image: url(../Images/quote.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -830,8 +839,8 @@ header nav .form i {
 /* End Quote */
 /* Start Pricing */
 .pricing {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
 }
 
 .pricing .container {
@@ -931,8 +940,8 @@ header nav .form i {
 /* End Pricing */
 /* Start Subsribe */
 .sub {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
   background-image: url(../Images/subscribe.jpg);
   background-size: cover;
   position: relative;
@@ -1023,8 +1032,8 @@ header nav .form i {
 /* End Subsribe */
 /* Start Contact */
 .contact {
-  /* padding-top: 100px; */
-  padding-bottom: 100px;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
 }
 
 .contact .container .content {
@@ -1103,12 +1112,12 @@ header nav .form i {
 .contact .container .content .info .phone {
   display: block;
   margin-bottom: 10px;
-  color: #777;
+  color: var(--font-color);
 }
 
 .contact .container .content .info address {
   line-height: 2;
-  color: #777;
+  color: var(--font-color);
 }
 
 @media (max-width: 767px) {
@@ -1122,8 +1131,8 @@ header nav .form i {
 .footer {
   background-image: url(../Images/subscribe.jpg);
   background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: calc(var(--main-padding-top) / 2);
+  padding-bottom: calc(var(--main-padding-bottom) / 2);
   color: white;
   position: relative;
   text-align: center;
